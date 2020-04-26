@@ -1,7 +1,7 @@
 <div class="page-header-inner">
     <div class="page-header-inner">
         <div class="navbar-header">
-            <a href="{{ url('/') }}"
+            <a href="{{ url('/admin/dasboard') }}"
                class="navbar-brand">
                <img src="{{asset('images/new-logo.png')}}"/>
                 @lang('quickadmin.quickadmin_title')
@@ -15,7 +15,7 @@
 
         <div class="top-menu">
             <ul class="nav navbar-nav pull-right">
-                
+
             </ul>
         </div>
     </div>

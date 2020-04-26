@@ -70,6 +70,15 @@
                     <span>@lang('quickadmin.patient.title')</span>
                 </router-link>
             </li>
+
+            <li v-if="$can('patient_access')">
+                <router-link :to="{ name: 'patients.index' }">
+                    <i class="fa fa-address-book"></i>
+                    <span>@lang('quickadmin.patient.title')</span>
+                    <span style="margin-left: 10px; font-family: Helvetica"><i class="fa fa-plus-square"></i></span>
+                </router-link>
+            </li>
+
             <li v-if="$can('doctor_access')">
                 <router-link :to="{ name: 'doctors.index' }">
                     <i class="fa fa-user-md"></i>
