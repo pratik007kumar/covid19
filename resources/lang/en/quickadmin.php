@@ -1,15 +1,100 @@
 <?php
 
 return [
-		'user-management' => [		'title' => 'User management',		'fields' => [		],	],
-		'permissions' => [		'title' => 'Permissions',		'fields' => [			'title' => 'Title',		],	],
-		'roles' => [		'title' => 'Roles',		'fields' => [			'title' => 'Title',			'permission' => 'Permissions',		],	],
-		'users' => [		'title' => 'Users',		'fields' => [			'name' => 'Name',			'email' => 'Email',			'password' => 'Password',			'role' => 'Role',			'remember-token' => 'Remember token',		],	],
-		'contact-management' => [		'title' => 'Contact management',		'fields' => [		],	],
-		'contact-companies' => [		'title' => 'Companies',		'fields' => [			'name' => 'Company name',			'address' => 'Address',			'website' => 'Website',			'email' => 'Email',		],	],
-		'contacts' => [		'title' => 'Contacts',		'fields' => [			'company' => 'Company',			'first-name' => 'First name',			'last-name' => 'Last name',			'phone1' => 'Phone 1',			'phone2' => 'Phone 2',			'email' => 'Email',			'skype' => 'Skype',			'address' => 'Address',		],	],
-		'patient' => [		'title' => 'Patient',		'fields' => [			'first-name' => 'First Name',			'last-name' => 'Last name',			'email' => 'Email',			'mobile' => 'Mobile',			'address' => 'Address',			'pin' => 'Pin',			'state' => 'State',		],	],
-		'doctors' => [		'title' => 'Doctors',		'fields' => [			'first-name' => 'First name',			'last-name' => 'Last name',			'email' => 'Email',			'phone' => 'Phone',			'address' => 'Address',			'state' => 'State',			'pin' => 'Pin',		],	],
+
+	'user-management' => [
+		'title' => 'User management',
+		'fields' => [
+		],
+	],
+
+	'permissions' => [
+		'title' => 'Permissions',
+		'fields' => [
+			'title' => 'Title',
+		],
+	],
+
+	'roles' => [
+		'title' => 'Roles',
+		'fields' => [
+			'title' => 'Title',
+			'permission' => 'Permissions',
+		],
+	],
+
+	'users' => [
+		'title' => 'Users',
+		'fields' => [
+			'name' => 'Name',
+			'email' => 'Email',
+			'password' => 'Password',
+			'role' => 'Role',
+			'remember-token' => 'Remember token',
+		],
+	],
+
+	'contact-management' => [
+		'title' => 'Contact management',
+		'fields' => [
+		],
+	],
+
+	'contact-companies' => [
+		'title' => 'Companies',
+		'fields' => [
+			'name' => 'Company name',
+			'address' => 'Address',
+			'website' => 'Website',
+			'email' => 'Email',
+		],
+	],
+
+	'contacts' => [
+		'title' => 'Contacts',
+		'fields' => [
+			'company' => 'Company',
+			'first-name' => 'First name',
+			'last-name' => 'Last name',
+			'phone1' => 'Phone 1',
+			'phone2' => 'Phone 2',
+			'email' => 'Email',
+			'skype' => 'Skype',
+			'address' => 'Address',
+		],
+	],
+
+	'patient' => [
+		'title' => 'Patient',
+		'fields' => [
+			'first-name' => 'First Name',
+			'last-name' => 'Last name',
+			'email' => 'Email',
+			'mobile' => 'Mobile',
+			'address' => 'Address',
+			'pin' => 'Pin',
+			'state' => 'State',
+		],
+	],
+
+	'doctors' => [
+		'title' => 'Doctors',
+		'fields' => [
+			'first-name' => 'First name',
+			'last-name' => 'Last name',
+			'email' => 'Email',
+			'phone' => 'Phone',
+			'address' => 'Address',
+			'state' => 'State',
+			'pin' => 'Pin',
+		],
+	],
+	'quiz' => [
+		'title' => 'Quiz',
+		'fields' => [
+
+		],
+	],
 	'qa_create' => 'Create',
 	'qa_save' => 'Save',
 	'qa_edit' => 'Edit',

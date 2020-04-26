@@ -3021,6 +3021,132 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/client/assets/js/components/cruds/Quiz/Home.vue":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__quiz_Popup__ = __webpack_require__("./resources/client/assets/js/components/cruds/quiz/Popup.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__quiz_Popup___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__quiz_Popup__);
+//
+//
+//
+//
+//
+//
+
+// @ is an alias to /src
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "Home",
+  components: {
+    QuizPopup: __WEBPACK_IMPORTED_MODULE_0__quiz_Popup___default.a
+  },
+  data: function data() {
+    return {
+      modal: false
+    };
+  },
+
+  methods: {
+    showModal: function showModal() {
+      this.modal = true;
+    },
+    onChildClick: function onChildClick() {
+      this.modal = false;
+    }
+    // refresh() {
+    //   window.location.reload();
+    // }
+
+  },
+  created: function created() {
+    this.showModal();
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/client/assets/js/components/cruds/Quiz/QuizTypes/CovidSelfAssessment.vue":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  head: function head() {
+    return {
+      title: "Covid Quiz | Empeal",
+      meta: [{
+        // title will be injected into parent titleTemplate
+        title: "Covid Quiz"
+      }, {
+        hid: "description",
+        name: "description",
+        content: "Covid Quiz"
+      }]
+    };
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/client/assets/js/components/cruds/Quiz/QuizTypes/CovidVisitorChecklist.vue":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  head: function head() {
+    return {
+      title: "Covid Checklist | Empeal",
+      meta: [{
+        // title will be injected into parent titleTemplate
+        title: "Covid Checklist"
+      }, {
+        hid: "description",
+        name: "description",
+        content: "Covid Checklist"
+      }]
+    };
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/client/assets/js/components/cruds/Roles/Create.vue":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -3943,6 +4069,117 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/client/assets/js/components/cruds/quiz/Popup.vue":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+// import gql from "graphql-tag";
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: {
+    modal: Boolean
+  },
+  methods: {
+    open: function open() {
+      this.$emit("opened");
+    },
+    close: function close() {
+      this.$emit("clicked");
+    }
+  }
+  // apollo: {
+  //   allLiveevents: gql`
+  //     {
+  //       allLiveevents(orderBy: date_DESC, first: "1") {
+  //         timestamp
+  //         title
+  //         date
+  //         link {
+  //           url
+  //         }
+  //       }
+  //     }
+  //   `
+  // }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/client/assets/js/components/dtmodules/DatatableActions.vue":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -4358,6 +4595,21 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-447385c5\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/client/assets/js/components/cruds/Quiz/QuizTypes/CovidVisitorChecklist.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n*[data-v-447385c5] {\n  height: 100vh;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-44d90c5c\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/client/assets/js/components/cruds/Contacts/Show.vue":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4367,6 +4619,21 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 // module
 exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-489aaebf\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/client/assets/js/components/cruds/quiz/Popup.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap);", ""]);
+
+// module
+exports.push([module.i, "\n.container2[data-v-489aaebf] {\n  width: 800px;\n  height: 600px;\n  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  border-radius: 15px;\n  position: fixed;\n  padding: 15px;\n  color: #12477c;\n  margin-left: 32.5%;\n  margin-top: 2%;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -ms-flex-line-pack: center;\n      align-content: center;\n  text-align: center;\n  z-index: 20;\n}\n.container2[data-v-489aaebf]:before {\n  position: relative;\n  content: \"\";\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  background: #fff;\n  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  border-radius: 15px;\n  z-index: -1;\n}\n\n/* .container2:after {\n  position: fixed;\n  content: \"\";\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  background: rgba(0, 0, 0, 0.5);\n  z-index: -2;\n} */\n.popup-row1[data-v-489aaebf] {\n  margin-top: 10px;\n}\n.popup-row1 img[data-v-489aaebf] {\n  width: 60px;\n  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  border-radius: 100%;\n}\n.popup-row1 .popup-close[data-v-489aaebf] {\n  position: relative;\n  top: 8px;\n  right: 8px;\n  width: 30px;\n  height: 30px;\n}\n.popup-row1 .popup-close[data-v-489aaebf]::before,\n.popup-row1 .popup-close[data-v-489aaebf]::after {\n  content: \"\";\n  position: relative;\n  top: 12px;\n  width: 14px;\n  height: 3px;\n  background-color: #12477c;\n}\n.popup-row1 .popup-close[data-v-489aaebf]::before {\n  -webkit-transform: rotate(45deg);\n  transform: rotate(45deg);\n  left: 8px;\n}\n.popup-row1 .popup-close[data-v-489aaebf]::after {\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n  right: 8px;\n}\n.popup-row2[data-v-489aaebf] {\n  margin: 10px;\n}\n.popup-row2 h1[data-v-489aaebf] {\n  font-size: 28px;\n  font-weight: bold;\n  font-family: \"Roboto\", sans-serif;\n}\n.popup-row3[data-v-489aaebf] {\n  padding: 3px;\n}\n@-webkit-keyframes rocket-data-v-489aaebf {\nfrom {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n}\nto {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg);\n}\n}\n@keyframes rocket-data-v-489aaebf {\nfrom {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n}\nto {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg);\n}\n}\n.popup-row3 img[data-v-489aaebf] {\n  margin-top: 20px;\n  margin-bottom: 18px;\n  width: 100px;\n  /* transform: rotate(300deg); */\n  -webkit-animation-name: rocket-data-v-489aaebf;\n          animation-name: rocket-data-v-489aaebf;\n  -webkit-animation-duration: 8s;\n          animation-duration: 8s;\n  -webkit-animation-iteration-count: infinite;\n          animation-iteration-count: infinite;\n  -webkit-animation-direction: alternate;\n          animation-direction: alternate;\n  -webkit-transition: 1s ease-in;\n  -webkit-transition: 3s ease-in;\n  transition: 3s ease-in;\n}\n.popup-row3 img[data-v-489aaebf]:hover {\n  -webkit-transform: rotate(360deg);\n          transform: rotate(360deg);\n  -webkit-transition: 4s ease-in;\n  transition: 4s ease-in;\n}\n.popup-row4 h2[data-v-489aaebf] {\n  margin-top: 20px;\n  font-size: 20px;\n  font-weight: 600;\n  margin-bottom: -20px;\n}\n.live-events[data-v-489aaebf] {\n  font-family: \"Poppins\", sans-serif;\n  width: 90%;\n  margin: 10px;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 8px;\n  height: auto;\n  background: #12477c;\n  background: -webkit-gradient(\n    linear,\n    left top, right top,\n    from(rgba(18, 71, 124, 1)),\n    color-stop(29%, rgba(0, 79, 158, 1)),\n    to(#00366d)\n  );\n  background: linear-gradient(\n    90deg,\n    rgba(18, 71, 124, 1) 0%,\n    rgba(0, 79, 158, 1) 29%,\n    #00366d 100%\n  );\n  color: #ffffff;\n  border-radius: 6px;\n  -webkit-box-shadow: 0 2px 6px 0 #12477c2a, 0 3px 10px 0 rgba(0, 0, 0, 0.19);\n          box-shadow: 0 2px 6px 0 #12477c2a, 0 3px 10px 0 rgba(0, 0, 0, 0.19);\n}\n.date[data-v-489aaebf] {\n  margin-left: 30px;\n}\n.timings[data-v-489aaebf] {\n  margin-top: 10px;\n}\n.time[data-v-489aaebf] {\n  padding: 20px;\n}\n#cta-popup1[data-v-489aaebf] {\n  font-family: \"Poppins\", sans-serif;\n  font-size: 16px;\n  width: 100px;\n  margin-left: 40px;\n  height: auto;\n  background: #fff;\n  color: #12477c;\n  font-weight: 600;\n  border: 2px solid #f7f7f7;\n  border-radius: 6px;\n  cursor: pointer;\n}\n#cta-popup[data-v-489aaebf] {\n  font-family: \"Poppins\", sans-serif;\n  font-size: 16px;\n  width: auto;\n  margin: 5px;\n  padding: 8px;\n  height: auto;\n  background: #fff;\n  color: #12477c;\n  font-weight: 600;\n  border: 2px solid #f7f7f7;\n\n  border-radius: 6px;\n  -webkit-box-shadow: 0 2px 20px 0 #12477c2a, 0 4px 4px 0 #12477c2a;\n          box-shadow: 0 2px 20px 0 #12477c2a, 0 4px 4px 0 #12477c2a;\n  cursor: pointer;\n}\n#cta-popup[data-v-489aaebf]:hover {\n  color: #fff;\n  background: #12477c;\n  border: 2px solid #12477c;\n}\n@media screen and (max-width: 1600px) {\n.container2[data-v-489aaebf] {\n    width: 540px;\n    height: 600px;\n    margin-left: 35%;\n    margin-right: 50%;\n    margin-top: 3%;\n}\n.popup-row2 h1[data-v-489aaebf] {\n    font-size: 24px;\n    line-height: 1.2em;\n}\n#cta[data-v-489aaebf] {\n    margin-top: 10px;\n    margin: 10px;\n}\n.live-events[data-v-489aaebf] {\n    width: 90%;\n}\n.date[data-v-489aaebf] {\n    margin-left: 10px;\n}\n#cta-popup1[data-v-489aaebf] {\n    margin-left: 0;\n    margin-top: 10px;\n}\n}\n@media screen and (max-width: 1300px) {\n.container2[data-v-489aaebf] {\n    width: 540px;\n    height: 600px;\n    margin-left: 28%;\n    margin-right: 50%;\n    margin-top: 8%;\n}\n.popup-row2 h1[data-v-489aaebf] {\n    font-size: 24px;\n    line-height: 1.2em;\n}\n#cta[data-v-489aaebf] {\n    margin-top: 10px;\n    margin: 10px;\n}\n.live-events[data-v-489aaebf] {\n    width: 90%;\n}\n.date[data-v-489aaebf] {\n    margin-left: 10px;\n}\n#cta-popup1[data-v-489aaebf] {\n    margin-left: 0;\n    margin-top: 10px;\n}\n}\n@media screen and (max-width: 1000px) {\n.container2[data-v-489aaebf] {\n    width: 540px;\n    height: 600px;\n    margin-left: 17%;\n    margin-right: 50%;\n    margin-top: 10%;\n}\n.popup-row2 h1[data-v-489aaebf] {\n    font-size: 24px;\n    line-height: 1.2em;\n}\n#cta[data-v-489aaebf] {\n    margin-top: 10px;\n    margin: 10px;\n}\n.live-events[data-v-489aaebf] {\n    width: 90%;\n}\n.date[data-v-489aaebf] {\n    margin-left: 10px;\n}\n#cta-popup1[data-v-489aaebf] {\n    margin-left: 0;\n    margin-top: 10px;\n}\n}\n@media screen and (max-width: 750px) {\n.container2[data-v-489aaebf] {\n    width: 380px;\n    height: 620px;\n    margin-left: 17%;\n    margin-right: 50%;\n    margin-top: 0%;\n}\n.popup-row1 img[data-v-489aaebf] {\n    width: 40px;\n}\n.popup-row2 h1[data-v-489aaebf] {\n    font-size: 20px;\n    line-height: 1.2em;\n}\n.popup-row3 img[data-v-489aaebf] {\n    width: 50px;\n}\n.live-events[data-v-489aaebf] {\n    font-size: 14px;\n}\n#cta-popup[data-v-489aaebf] {\n    margin-top: 10px;\n    margin: 10px;\n    width: 100px;\n    height: 50px;\n    font-size: 12px;\n}\n}\n@media screen and (max-width: 420px) {\n.container2[data-v-489aaebf] {\n    width: 300px;\n    height: 640px;\n    margin-left: 13%;\n    margin-right: 50%;\n    margin-top: -12%;\n}\n.popup-row1 img[data-v-489aaebf] {\n    width: 40px;\n}\n.popup-row2 h1[data-v-489aaebf] {\n    font-size: 20px;\n    line-height: 1.2em;\n}\n.popup-row3 img[data-v-489aaebf] {\n    width: 50px;\n}\n.live-events[data-v-489aaebf] {\n    font-size: 14px;\n}\n#cta-popup[data-v-489aaebf] {\n    margin-top: 10px;\n    margin: 10px;\n    width: 100px;\n    height: 50px;\n    font-size: 12px;\n}\n}\n@media screen and (max-width: 380px) {\n.container2[data-v-489aaebf] {\n    width: 300px;\n    height: 620px;\n    margin-left: 10%;\n    margin-right: 50%;\n    margin-top: -23%;\n}\n.popup-row1 img[data-v-489aaebf] {\n    width: 40px;\n}\n.popup-row2 h1[data-v-489aaebf] {\n    font-size: 20px;\n    line-height: 1.2em;\n}\n.popup-row3 img[data-v-489aaebf] {\n    width: 70px;\n    margin-top: 0px;\n    margin-bottom: 0px;\n}\n.live-events[data-v-489aaebf] {\n    font-size: 14px;\n}\n#cta-popup[data-v-489aaebf] {\n    margin-top: 10px;\n    margin: 10px;\n    width: 100px;\n    height: 50px;\n    font-size: 12px;\n}\n}\n", ""]);
 
 // exports
 
@@ -4493,6 +4760,21 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6615565b\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/client/assets/js/components/cruds/Quiz/QuizTypes/CovidSelfAssessment.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n*[data-v-6615565b] {\n  height: 100vh;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6711dbbc\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/client/assets/js/components/cruds/Permissions/Edit.vue":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4592,6 +4874,21 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 // module
 exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-99fc1a08\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/client/assets/js/components/cruds/Quiz/Home.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n*[data-v-99fc1a08] {\n  height: 94.7vh;\n}\n", ""]);
 
 // exports
 
@@ -26995,6 +27292,45 @@ if (false) {
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-447385c5\",\"hasScoped\":true,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/client/assets/js/components/cruds/Quiz/QuizTypes/CovidVisitorChecklist.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("iframe", {
+        attrs: {
+          id: "typeform-full",
+          width: "100%",
+          height: "100%",
+          frameborder: "0",
+          allow: "camera; microphone; autoplay; encrypted-media;",
+          src: "https://empeal-health.typeform.com/to/H8GVEX"
+        }
+      })
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-447385c5", module.exports)
+  }
+}
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-44d90c5c\",\"hasScoped\":true,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/client/assets/js/components/cruds/Contacts/Show.vue":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -27128,6 +27464,157 @@ if (false) {
   module.hot.accept()
   if (module.hot.data) {
     require("vue-hot-reload-api")      .rerender("data-v-44d90c5c", module.exports)
+  }
+}
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-489aaebf\",\"hasScoped\":true,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/client/assets/js/components/cruds/quiz/Popup.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm.modal ? _vm._m(6) : _vm._e()
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "popup-row1" }, [
+      _c("img", {
+        attrs: {
+          src: __webpack_require__("./resources/client/assets/images/logocirclemdpi.png"),
+          alt: "",
+          srcset: ""
+        }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "popup-row2" }, [
+      _c("h1", [_vm._v("Empeal COVID-19 Kit")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "popup-row3" }, [
+      _c("img", {
+        attrs: {
+          src: __webpack_require__("./resources/client/assets/images/covid.png"),
+          alt: "",
+          srcset: ""
+        }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("a", { attrs: { href: "https://empeal.com/covidresources" } }, [
+      _c("button", { attrs: { id: "cta-popup", type: "submit" } }, [
+        _vm._v("Resources")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      { attrs: { href: "https://empeal-health.typeform.com/to/FuuOav" } },
+      [
+        _c("button", { attrs: { id: "cta-popup", type: "submit" } }, [
+          _vm._v("Virtual Catch-up")
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "live-events" }, [
+      _c("b", [_vm._v("No events available")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "date" }),
+      _vm._v(" "),
+      _c("br"),
+      _vm._v(" "),
+      _c("div", { staticClass: "timings" })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "popup" } }, [
+      _c("div", { staticClass: "container2" }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _vm._m(1),
+        _vm._v(" "),
+        _vm._m(2),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "popup-row4" },
+          [
+            _c(
+              "router-link",
+              { attrs: { to: "/quiz/covid-self-assessment" } },
+              [
+                _c("button", { attrs: { id: "cta-popup", type: "submit" } }, [
+                  _vm._v("Self-Assessment")
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "router-link",
+              { attrs: { to: "/quiz/covid-visitor-checklist" } },
+              [
+                _c("button", { attrs: { id: "cta-popup", type: "submit" } }, [
+                  _vm._v("Visitor Checklist")
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _vm._m(3),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _vm._m(4),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("h2", [_vm._v("Live Events")]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _vm._m(5)
+          ],
+          1
+        )
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-489aaebf", module.exports)
   }
 }
 
@@ -28316,6 +28803,45 @@ if (false) {
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-6615565b\",\"hasScoped\":true,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/client/assets/js/components/cruds/Quiz/QuizTypes/CovidSelfAssessment.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("iframe", {
+        attrs: {
+          id: "typeform-full",
+          width: "100%",
+          height: "100%",
+          frameborder: "0",
+          allow: "camera; microphone; autoplay; encrypted-media;",
+          src: "https://empeal-health.typeform.com/to/IX28V2"
+        }
+      })
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-6615565b", module.exports)
+  }
+}
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-6711dbbc\",\"hasScoped\":true,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/client/assets/js/components/cruds/Permissions/Edit.vue":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -29184,6 +29710,50 @@ if (false) {
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-99fc1a08\",\"hasScoped\":true,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/client/assets/js/components/cruds/Quiz/Home.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "home" },
+    [_vm.modal ? _vm._m(0) : _vm._e()],
+    1
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("QuizPopup", {
+      directives: [
+        {
+          name: "show",
+          rawName: "v-show",
+          value: _vm.modal,
+          expression: "modal"
+        }
+      ],
+      attrs: { modal: _vm.showModal },
+      on: { clicked: _vm.onChildClick }
+    })
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-99fc1a08", module.exports)
+  }
+}
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-ab2e175e\",\"hasScoped\":true,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/client/assets/js/components/cruds/Users/Show.vue":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -29779,7 +30349,7 @@ var content = __webpack_require__("./node_modules/css-loader/index.js!./node_mod
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("108d20f2", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("8773fa00", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -29806,7 +30376,7 @@ var content = __webpack_require__("./node_modules/css-loader/index.js!./node_mod
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("34065d7e", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("b3310c6a", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -29833,7 +30403,7 @@ var content = __webpack_require__("./node_modules/css-loader/index.js!./node_mod
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("b312e562", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("e9c2b356", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -29860,7 +30430,7 @@ var content = __webpack_require__("./node_modules/css-loader/index.js!./node_mod
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("7778a4ce", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("99612516", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -29887,7 +30457,7 @@ var content = __webpack_require__("./node_modules/css-loader/index.js!./node_mod
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("66b37a3d", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("a96de7e0", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -29914,7 +30484,7 @@ var content = __webpack_require__("./node_modules/css-loader/index.js!./node_mod
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("22b1262e", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("b17bc7e0", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -29941,7 +30511,7 @@ var content = __webpack_require__("./node_modules/css-loader/index.js!./node_mod
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("53cca1aa", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("0c6750d1", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -29968,7 +30538,7 @@ var content = __webpack_require__("./node_modules/css-loader/index.js!./node_mod
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("54b0b680", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("23a1f1a7", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -29995,7 +30565,7 @@ var content = __webpack_require__("./node_modules/css-loader/index.js!./node_mod
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("6f60083a", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("164a48ca", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -30022,7 +30592,7 @@ var content = __webpack_require__("./node_modules/css-loader/index.js!./node_mod
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("2861eef8", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("0750a092", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -30049,7 +30619,7 @@ var content = __webpack_require__("./node_modules/css-loader/index.js!./node_mod
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("a2de189a", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("1fe043ac", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -30076,7 +30646,7 @@ var content = __webpack_require__("./node_modules/css-loader/index.js!./node_mod
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("5890a50b", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("1601291c", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -30103,7 +30673,7 @@ var content = __webpack_require__("./node_modules/css-loader/index.js!./node_mod
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("1c29d6b3", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("34e917e6", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -30130,7 +30700,7 @@ var content = __webpack_require__("./node_modules/css-loader/index.js!./node_mod
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("60da700a", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("e94d2afe", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -30157,13 +30727,40 @@ var content = __webpack_require__("./node_modules/css-loader/index.js!./node_mod
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("63cad0fc", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("80f6c40a", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
    module.hot.accept("!!../../../../../../../node_modules/css-loader/index.js!../../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-434d47cc\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Index.vue", function() {
      var newContent = require("!!../../../../../../../node_modules/css-loader/index.js!../../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-434d47cc\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Index.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-447385c5\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/client/assets/js/components/cruds/Quiz/QuizTypes/CovidVisitorChecklist.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-447385c5\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/client/assets/js/components/cruds/Quiz/QuizTypes/CovidVisitorChecklist.vue");
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("aec12e0c", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../../../../node_modules/css-loader/index.js!../../../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-447385c5\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./CovidVisitorChecklist.vue", function() {
+     var newContent = require("!!../../../../../../../../node_modules/css-loader/index.js!../../../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-447385c5\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./CovidVisitorChecklist.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -30184,13 +30781,40 @@ var content = __webpack_require__("./node_modules/css-loader/index.js!./node_mod
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("2d3262c2", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("0c21145c", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
    module.hot.accept("!!../../../../../../../node_modules/css-loader/index.js!../../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-44d90c5c\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Show.vue", function() {
      var newContent = require("!!../../../../../../../node_modules/css-loader/index.js!../../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-44d90c5c\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Show.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-489aaebf\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/client/assets/js/components/cruds/quiz/Popup.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-489aaebf\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/client/assets/js/components/cruds/quiz/Popup.vue");
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("3192c48c", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../../../node_modules/css-loader/index.js!../../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-489aaebf\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Popup.vue", function() {
+     var newContent = require("!!../../../../../../../node_modules/css-loader/index.js!../../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-489aaebf\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Popup.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -30211,7 +30835,7 @@ var content = __webpack_require__("./node_modules/css-loader/index.js!./node_mod
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("0fbe3bf8", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("0672a4de", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -30238,7 +30862,7 @@ var content = __webpack_require__("./node_modules/css-loader/index.js!./node_mod
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("3e0e6c11", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("4f0a1284", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -30265,7 +30889,7 @@ var content = __webpack_require__("./node_modules/css-loader/index.js!./node_mod
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("327def68", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("1086a282", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -30292,7 +30916,7 @@ var content = __webpack_require__("./node_modules/css-loader/index.js!./node_mod
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("59c23118", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("d134fe4a", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -30319,7 +30943,7 @@ var content = __webpack_require__("./node_modules/css-loader/index.js!./node_mod
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("45cc43fc", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("44f52929", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -30346,7 +30970,7 @@ var content = __webpack_require__("./node_modules/css-loader/index.js!./node_mod
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("7f53df41", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("2faee6fb", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -30373,7 +30997,7 @@ var content = __webpack_require__("./node_modules/css-loader/index.js!./node_mod
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("4d93856c", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("4c7b0712", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -30400,13 +31024,40 @@ var content = __webpack_require__("./node_modules/css-loader/index.js!./node_mod
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("7bc8794c", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("6c7a739a", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
    module.hot.accept("!!../../../../../../../node_modules/css-loader/index.js!../../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-64b133c9\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Edit.vue", function() {
      var newContent = require("!!../../../../../../../node_modules/css-loader/index.js!../../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-64b133c9\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Edit.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6615565b\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/client/assets/js/components/cruds/Quiz/QuizTypes/CovidSelfAssessment.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6615565b\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/client/assets/js/components/cruds/Quiz/QuizTypes/CovidSelfAssessment.vue");
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("675d1653", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../../../../node_modules/css-loader/index.js!../../../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6615565b\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./CovidSelfAssessment.vue", function() {
+     var newContent = require("!!../../../../../../../../node_modules/css-loader/index.js!../../../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6615565b\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./CovidSelfAssessment.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -30427,7 +31078,7 @@ var content = __webpack_require__("./node_modules/css-loader/index.js!./node_mod
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("c2e5d470", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("62d3af2f", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -30454,7 +31105,7 @@ var content = __webpack_require__("./node_modules/css-loader/index.js!./node_mod
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("6bcff574", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("3a51730e", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -30481,7 +31132,7 @@ var content = __webpack_require__("./node_modules/css-loader/index.js!./node_mod
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("327ea44f", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("b8641770", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -30508,7 +31159,7 @@ var content = __webpack_require__("./node_modules/css-loader/index.js!./node_mod
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("8ef6dce2", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("54f357f6", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -30535,7 +31186,7 @@ var content = __webpack_require__("./node_modules/css-loader/index.js!./node_mod
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("33122c7f", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("439ad3b2", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -30562,7 +31213,7 @@ var content = __webpack_require__("./node_modules/css-loader/index.js!./node_mod
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("df19ab86", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("9082776c", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -30589,13 +31240,40 @@ var content = __webpack_require__("./node_modules/css-loader/index.js!./node_mod
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("569c2af4", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("6724d227", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
    module.hot.accept("!!../../../../../../../node_modules/css-loader/index.js!../../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-8eef5e2e\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Edit.vue", function() {
      var newContent = require("!!../../../../../../../node_modules/css-loader/index.js!../../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-8eef5e2e\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Edit.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-99fc1a08\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/client/assets/js/components/cruds/Quiz/Home.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-99fc1a08\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/client/assets/js/components/cruds/Quiz/Home.vue");
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("f5f3881a", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../../../node_modules/css-loader/index.js!../../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-99fc1a08\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Home.vue", function() {
+     var newContent = require("!!../../../../../../../node_modules/css-loader/index.js!../../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-99fc1a08\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Home.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -30616,7 +31294,7 @@ var content = __webpack_require__("./node_modules/css-loader/index.js!./node_mod
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("06c18f8c", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("4a998521", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -30643,7 +31321,7 @@ var content = __webpack_require__("./node_modules/css-loader/index.js!./node_mod
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("554f68e3", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("2255448a", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -30670,7 +31348,7 @@ var content = __webpack_require__("./node_modules/css-loader/index.js!./node_mod
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("4bb3e8ad", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("b28c4f9a", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -30697,7 +31375,7 @@ var content = __webpack_require__("./node_modules/css-loader/index.js!./node_mod
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("213b074a", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("202288f0", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -30724,7 +31402,7 @@ var content = __webpack_require__("./node_modules/css-loader/index.js!./node_mod
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("709087fc", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("abb57d6e", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -30751,7 +31429,7 @@ var content = __webpack_require__("./node_modules/css-loader/index.js!./node_mod
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("438fd5c2", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("77a854dc", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -30765,6 +31443,20 @@ if(false) {
  // When the module is disposed, remove the <style> tags
  module.hot.dispose(function() { update(); });
 }
+
+/***/ }),
+
+/***/ "./resources/client/assets/images/covid.png":
+/***/ (function(module, exports) {
+
+module.exports = "/images/covid.png?7596bc63ead8a2ab964abff9ab1266db";
+
+/***/ }),
+
+/***/ "./resources/client/assets/images/logocirclemdpi.png":
+/***/ (function(module, exports) {
+
+module.exports = "/images/logocirclemdpi.png?e5c083bc1e58a9d285c9bd2cfed7b1a4";
 
 /***/ }),
 
@@ -32226,6 +32918,162 @@ module.exports = Component.exports
 
 /***/ }),
 
+/***/ "./resources/client/assets/js/components/cruds/Quiz/Home.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__("./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-99fc1a08\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/client/assets/js/components/cruds/Quiz/Home.vue")
+}
+var normalizeComponent = __webpack_require__("./node_modules/vue-loader/lib/component-normalizer.js")
+/* script */
+var __vue_script__ = __webpack_require__("./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/client/assets/js/components/cruds/Quiz/Home.vue")
+/* template */
+var __vue_template__ = __webpack_require__("./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-99fc1a08\",\"hasScoped\":true,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/client/assets/js/components/cruds/Quiz/Home.vue")
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-99fc1a08"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/client/assets/js/components/cruds/Quiz/Home.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-99fc1a08", Component.options)
+  } else {
+    hotAPI.reload("data-v-99fc1a08", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ "./resources/client/assets/js/components/cruds/Quiz/QuizTypes/CovidSelfAssessment.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__("./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6615565b\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/client/assets/js/components/cruds/Quiz/QuizTypes/CovidSelfAssessment.vue")
+}
+var normalizeComponent = __webpack_require__("./node_modules/vue-loader/lib/component-normalizer.js")
+/* script */
+var __vue_script__ = __webpack_require__("./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/client/assets/js/components/cruds/Quiz/QuizTypes/CovidSelfAssessment.vue")
+/* template */
+var __vue_template__ = __webpack_require__("./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-6615565b\",\"hasScoped\":true,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/client/assets/js/components/cruds/Quiz/QuizTypes/CovidSelfAssessment.vue")
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-6615565b"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/client/assets/js/components/cruds/Quiz/QuizTypes/CovidSelfAssessment.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-6615565b", Component.options)
+  } else {
+    hotAPI.reload("data-v-6615565b", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ "./resources/client/assets/js/components/cruds/Quiz/QuizTypes/CovidVisitorChecklist.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__("./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-447385c5\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/client/assets/js/components/cruds/Quiz/QuizTypes/CovidVisitorChecklist.vue")
+}
+var normalizeComponent = __webpack_require__("./node_modules/vue-loader/lib/component-normalizer.js")
+/* script */
+var __vue_script__ = __webpack_require__("./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/client/assets/js/components/cruds/Quiz/QuizTypes/CovidVisitorChecklist.vue")
+/* template */
+var __vue_template__ = __webpack_require__("./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-447385c5\",\"hasScoped\":true,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/client/assets/js/components/cruds/Quiz/QuizTypes/CovidVisitorChecklist.vue")
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-447385c5"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/client/assets/js/components/cruds/Quiz/QuizTypes/CovidVisitorChecklist.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-447385c5", Component.options)
+  } else {
+    hotAPI.reload("data-v-447385c5", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
 /***/ "./resources/client/assets/js/components/cruds/Roles/Create.vue":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -32642,6 +33490,58 @@ module.exports = Component.exports
 
 /***/ }),
 
+/***/ "./resources/client/assets/js/components/cruds/quiz/Popup.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__("./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-489aaebf\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/client/assets/js/components/cruds/quiz/Popup.vue")
+}
+var normalizeComponent = __webpack_require__("./node_modules/vue-loader/lib/component-normalizer.js")
+/* script */
+var __vue_script__ = __webpack_require__("./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/client/assets/js/components/cruds/quiz/Popup.vue")
+/* template */
+var __vue_template__ = __webpack_require__("./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-489aaebf\",\"hasScoped\":true,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/client/assets/js/components/cruds/quiz/Popup.vue")
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-489aaebf"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/client/assets/js/components/cruds/quiz/Popup.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-489aaebf", Component.options)
+  } else {
+    hotAPI.reload("data-v-489aaebf", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
 /***/ "./resources/client/assets/js/components/dtmodules/DatatableActions.vue":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -32940,6 +33840,15 @@ function subjectName(item) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__components_cruds_Doctors_Show_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_29__components_cruds_Doctors_Show_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__components_cruds_Doctors_Edit_vue__ = __webpack_require__("./resources/client/assets/js/components/cruds/Doctors/Edit.vue");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__components_cruds_Doctors_Edit_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_30__components_cruds_Doctors_Edit_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__components_cruds_Quiz_Home_vue__ = __webpack_require__("./resources/client/assets/js/components/cruds/Quiz/Home.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__components_cruds_Quiz_Home_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_31__components_cruds_Quiz_Home_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__components_cruds_Quiz_QuizTypes_CovidSelfAssessment_vue__ = __webpack_require__("./resources/client/assets/js/components/cruds/Quiz/QuizTypes/CovidSelfAssessment.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__components_cruds_Quiz_QuizTypes_CovidSelfAssessment_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_32__components_cruds_Quiz_QuizTypes_CovidSelfAssessment_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__components_cruds_Quiz_QuizTypes_CovidVisitorChecklist_vue__ = __webpack_require__("./resources/client/assets/js/components/cruds/Quiz/QuizTypes/CovidVisitorChecklist.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__components_cruds_Quiz_QuizTypes_CovidVisitorChecklist_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_33__components_cruds_Quiz_QuizTypes_CovidVisitorChecklist_vue__);
+
+
+
 
 
 
@@ -32975,11 +33884,75 @@ function subjectName(item) {
 
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_router__["default"]);
 
-var routes = [{ path: '/change-password', component: __WEBPACK_IMPORTED_MODULE_2__components_ChangePassword_vue___default.a, name: 'auth.change_password' }, { path: '/permissions', component: __WEBPACK_IMPORTED_MODULE_3__components_cruds_Permissions_Index_vue___default.a, name: 'permissions.index' }, { path: '/permissions/create', component: __WEBPACK_IMPORTED_MODULE_4__components_cruds_Permissions_Create_vue___default.a, name: 'permissions.create' }, { path: '/permissions/:id', component: __WEBPACK_IMPORTED_MODULE_5__components_cruds_Permissions_Show_vue___default.a, name: 'permissions.show' }, { path: '/permissions/:id/edit', component: __WEBPACK_IMPORTED_MODULE_6__components_cruds_Permissions_Edit_vue___default.a, name: 'permissions.edit' }, { path: '/roles', component: __WEBPACK_IMPORTED_MODULE_7__components_cruds_Roles_Index_vue___default.a, name: 'roles.index' }, { path: '/roles/create', component: __WEBPACK_IMPORTED_MODULE_8__components_cruds_Roles_Create_vue___default.a, name: 'roles.create' }, { path: '/roles/:id', component: __WEBPACK_IMPORTED_MODULE_9__components_cruds_Roles_Show_vue___default.a, name: 'roles.show' }, { path: '/roles/:id/edit', component: __WEBPACK_IMPORTED_MODULE_10__components_cruds_Roles_Edit_vue___default.a, name: 'roles.edit' }, { path: '/users', component: __WEBPACK_IMPORTED_MODULE_11__components_cruds_Users_Index_vue___default.a, name: 'users.index' }, { path: '/users/create', component: __WEBPACK_IMPORTED_MODULE_12__components_cruds_Users_Create_vue___default.a, name: 'users.create' }, { path: '/users/:id', component: __WEBPACK_IMPORTED_MODULE_13__components_cruds_Users_Show_vue___default.a, name: 'users.show' }, { path: '/users/:id/edit', component: __WEBPACK_IMPORTED_MODULE_14__components_cruds_Users_Edit_vue___default.a, name: 'users.edit' }, { path: '/contact-companies', component: __WEBPACK_IMPORTED_MODULE_15__components_cruds_ContactCompanies_Index_vue___default.a, name: 'contact_companies.index' }, { path: '/contact-companies/create', component: __WEBPACK_IMPORTED_MODULE_16__components_cruds_ContactCompanies_Create_vue___default.a, name: 'contact_companies.create' }, { path: '/contact-companies/:id', component: __WEBPACK_IMPORTED_MODULE_17__components_cruds_ContactCompanies_Show_vue___default.a, name: 'contact_companies.show' }, { path: '/contact-companies/:id/edit', component: __WEBPACK_IMPORTED_MODULE_18__components_cruds_ContactCompanies_Edit_vue___default.a, name: 'contact_companies.edit' }, { path: '/contacts', component: __WEBPACK_IMPORTED_MODULE_19__components_cruds_Contacts_Index_vue___default.a, name: 'contacts.index' }, { path: '/contacts/create', component: __WEBPACK_IMPORTED_MODULE_20__components_cruds_Contacts_Create_vue___default.a, name: 'contacts.create' }, { path: '/contacts/:id', component: __WEBPACK_IMPORTED_MODULE_21__components_cruds_Contacts_Show_vue___default.a, name: 'contacts.show' }, { path: '/contacts/:id/edit', component: __WEBPACK_IMPORTED_MODULE_22__components_cruds_Contacts_Edit_vue___default.a, name: 'contacts.edit' }, { path: '/patients', component: __WEBPACK_IMPORTED_MODULE_23__components_cruds_Patients_Index_vue___default.a, name: 'patients.index' }, { path: '/patients/create', component: __WEBPACK_IMPORTED_MODULE_24__components_cruds_Patients_Create_vue___default.a, name: 'patients.create' }, { path: '/patients/:id', component: __WEBPACK_IMPORTED_MODULE_25__components_cruds_Patients_Show_vue___default.a, name: 'patients.show' }, { path: '/patients/:id/edit', component: __WEBPACK_IMPORTED_MODULE_26__components_cruds_Patients_Edit_vue___default.a, name: 'patients.edit' }, { path: '/doctors', component: __WEBPACK_IMPORTED_MODULE_27__components_cruds_Doctors_Index_vue___default.a, name: 'doctors.index' }, { path: '/doctors/create', component: __WEBPACK_IMPORTED_MODULE_28__components_cruds_Doctors_Create_vue___default.a, name: 'doctors.create' }, { path: '/doctors/:id', component: __WEBPACK_IMPORTED_MODULE_29__components_cruds_Doctors_Show_vue___default.a, name: 'doctors.show' }, { path: '/doctors/:id/edit', component: __WEBPACK_IMPORTED_MODULE_30__components_cruds_Doctors_Edit_vue___default.a, name: 'doctors.edit' }];
+var routes = [{
+    path: "/change-password",
+    component: __WEBPACK_IMPORTED_MODULE_2__components_ChangePassword_vue___default.a,
+    name: "auth.change_password"
+}, {
+    path: "/permissions",
+    component: __WEBPACK_IMPORTED_MODULE_3__components_cruds_Permissions_Index_vue___default.a,
+    name: "permissions.index"
+}, {
+    path: "/permissions/create",
+    component: __WEBPACK_IMPORTED_MODULE_4__components_cruds_Permissions_Create_vue___default.a,
+    name: "permissions.create"
+}, {
+    path: "/permissions/:id",
+    component: __WEBPACK_IMPORTED_MODULE_5__components_cruds_Permissions_Show_vue___default.a,
+    name: "permissions.show"
+}, {
+    path: "/permissions/:id/edit",
+    component: __WEBPACK_IMPORTED_MODULE_6__components_cruds_Permissions_Edit_vue___default.a,
+    name: "permissions.edit"
+}, { path: "/roles", component: __WEBPACK_IMPORTED_MODULE_7__components_cruds_Roles_Index_vue___default.a, name: "roles.index" }, { path: "/roles/create", component: __WEBPACK_IMPORTED_MODULE_8__components_cruds_Roles_Create_vue___default.a, name: "roles.create" }, { path: "/roles/:id", component: __WEBPACK_IMPORTED_MODULE_9__components_cruds_Roles_Show_vue___default.a, name: "roles.show" }, { path: "/roles/:id/edit", component: __WEBPACK_IMPORTED_MODULE_10__components_cruds_Roles_Edit_vue___default.a, name: "roles.edit" }, { path: "/users", component: __WEBPACK_IMPORTED_MODULE_11__components_cruds_Users_Index_vue___default.a, name: "users.index" }, { path: "/users/create", component: __WEBPACK_IMPORTED_MODULE_12__components_cruds_Users_Create_vue___default.a, name: "users.create" }, { path: "/users/:id", component: __WEBPACK_IMPORTED_MODULE_13__components_cruds_Users_Show_vue___default.a, name: "users.show" }, { path: "/users/:id/edit", component: __WEBPACK_IMPORTED_MODULE_14__components_cruds_Users_Edit_vue___default.a, name: "users.edit" }, {
+    path: "/contact-companies",
+    component: __WEBPACK_IMPORTED_MODULE_15__components_cruds_ContactCompanies_Index_vue___default.a,
+    name: "contact_companies.index"
+}, {
+    path: "/contact-companies/create",
+    component: __WEBPACK_IMPORTED_MODULE_16__components_cruds_ContactCompanies_Create_vue___default.a,
+    name: "contact_companies.create"
+}, {
+    path: "/contact-companies/:id",
+    component: __WEBPACK_IMPORTED_MODULE_17__components_cruds_ContactCompanies_Show_vue___default.a,
+    name: "contact_companies.show"
+}, {
+    path: "/contact-companies/:id/edit",
+    component: __WEBPACK_IMPORTED_MODULE_18__components_cruds_ContactCompanies_Edit_vue___default.a,
+    name: "contact_companies.edit"
+}, { path: "/contacts", component: __WEBPACK_IMPORTED_MODULE_19__components_cruds_Contacts_Index_vue___default.a, name: "contacts.index" }, {
+    path: "/contacts/create",
+    component: __WEBPACK_IMPORTED_MODULE_20__components_cruds_Contacts_Create_vue___default.a,
+    name: "contacts.create"
+}, { path: "/contacts/:id", component: __WEBPACK_IMPORTED_MODULE_21__components_cruds_Contacts_Show_vue___default.a, name: "contacts.show" }, {
+    path: "/contacts/:id/edit",
+    component: __WEBPACK_IMPORTED_MODULE_22__components_cruds_Contacts_Edit_vue___default.a,
+    name: "contacts.edit"
+}, { path: "/patients", component: __WEBPACK_IMPORTED_MODULE_23__components_cruds_Patients_Index_vue___default.a, name: "patients.index" }, {
+    path: "/patients/create",
+    component: __WEBPACK_IMPORTED_MODULE_24__components_cruds_Patients_Create_vue___default.a,
+    name: "patients.create"
+}, { path: "/patients/:id", component: __WEBPACK_IMPORTED_MODULE_25__components_cruds_Patients_Show_vue___default.a, name: "patients.show" }, {
+    path: "/patients/:id/edit",
+    component: __WEBPACK_IMPORTED_MODULE_26__components_cruds_Patients_Edit_vue___default.a,
+    name: "patients.edit"
+}, { path: "/doctors", component: __WEBPACK_IMPORTED_MODULE_27__components_cruds_Doctors_Index_vue___default.a, name: "doctors.index" }, {
+    path: "/doctors/create",
+    component: __WEBPACK_IMPORTED_MODULE_28__components_cruds_Doctors_Create_vue___default.a,
+    name: "doctors.create"
+}, { path: "/doctors/:id", component: __WEBPACK_IMPORTED_MODULE_29__components_cruds_Doctors_Show_vue___default.a, name: "doctors.show" }, { path: "/doctors/:id/edit", component: __WEBPACK_IMPORTED_MODULE_30__components_cruds_Doctors_Edit_vue___default.a, name: "doctors.edit" }, { path: "/quiz", component: __WEBPACK_IMPORTED_MODULE_31__components_cruds_Quiz_Home_vue___default.a, name: "quiz.home" }, {
+    path: "/quiz/covid-self-assessment",
+    component: __WEBPACK_IMPORTED_MODULE_32__components_cruds_Quiz_QuizTypes_CovidSelfAssessment_vue___default.a,
+    name: "quiz.covidselfassessment"
+}, {
+    path: "/quiz/covid-visitor-checklist",
+    component: __WEBPACK_IMPORTED_MODULE_33__components_cruds_Quiz_QuizTypes_CovidVisitorChecklist_vue___default.a,
+    name: "quiz.covidvisitorchecklist"
+}];
 
 /* harmony default export */ __webpack_exports__["a"] = (new __WEBPACK_IMPORTED_MODULE_1_vue_router__["default"]({
-    mode: 'history',
-    base: '/admin',
+    mode: "history",
+    base: "/admin",
     routes: routes
 }));
 

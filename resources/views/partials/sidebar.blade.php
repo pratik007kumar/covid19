@@ -78,6 +78,13 @@
             </li>
 
             <li>
+                <router-link :to="{ name: 'quiz.home' }">
+                    <i class="fa fa-key"></i>
+                    <span class="title">@lang('quickadmin.quiz.title')</span>
+                </router-link>
+            </li>
+
+            <li>
                 <router-link :to="{ name: 'auth.change_password' }">
                     <i class="fa fa-key"></i>
                     <span class="title">@lang('quickadmin.qa_change_password')</span>
