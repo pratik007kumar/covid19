@@ -10,4 +10,5 @@ Route::group(['prefix' => '/v1', 'middleware' => ['auth:api'], 'namespace' => 'A
     Route::apiResource('contacts', 'ContactsController');
     Route::apiResource('patients', 'PatientsController');
     Route::apiResource('doctors', 'DoctorsController');
+    Route::apiResource('appointments', 'AppointmentController');
 });

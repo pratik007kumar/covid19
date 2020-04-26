@@ -12,7 +12,7 @@ class PermissionSeed extends Seeder
     public function run()
     {
         $items = [
-            
+
             ['id' => 1, 'title' => 'user_management_access',],
             ['id' => 2, 'title' => 'permission_access',],
             ['id' => 3, 'title' => 'permission_create',],
@@ -49,12 +49,18 @@ class PermissionSeed extends Seeder
             ['id' => 34, 'title' => 'patient_edit',],
             ['id' => 35, 'title' => 'patient_view',],
             ['id' => 36, 'title' => 'patient_delete',],
+
             ['id' => 37, 'title' => 'doctor_access',],
             ['id' => 38, 'title' => 'doctor_create',],
             ['id' => 39, 'title' => 'doctor_edit',],
             ['id' => 40, 'title' => 'doctor_view',],
             ['id' => 41, 'title' => 'doctor_delete',],
 
+            ['id' => 42, 'title' => 'appointment_access',],
+            ['id' => 43, 'title' => 'appointment_create',],
+            ['id' => 44, 'title' => 'appointment_edit',],
+            ['id' => 45, 'title' => 'appointment_view',],
+            ['id' => 46, 'title' => 'appointment_delete',],
         ];
 
         foreach ($items as $item) {
