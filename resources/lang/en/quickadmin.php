@@ -4,12 +4,12 @@ return [
 
 	'user-management' => [
 		'title' => 'User management',
-<<<<<<< HEAD
-		'fields' => [
-		],
-=======
 		'fields' => [],
->>>>>>> fix_ui
+    ],
+
+	'quiz' => [
+		'title' => 'Assessment',
+		'fields' => [],
 	],
 
 	'permissions' => [
@@ -40,12 +40,7 @@ return [
 
 	'contact-management' => [
 		'title' => 'Contact management',
-<<<<<<< HEAD
-		'fields' => [
-		],
-=======
 		'fields' => [],
->>>>>>> fix_ui
 	],
 
 	'contact-companies' => [
@@ -97,15 +92,6 @@ return [
 			'pin' => 'Pin',
 		],
 	],
-<<<<<<< HEAD
-	'quiz' => [
-		'title' => 'Quiz',
-		'fields' => [
-
-		],
-	],
-=======
->>>>>>> fix_ui
 	'qa_create' => 'Create',
 	'qa_save' => 'Save',
 	'qa_edit' => 'Edit',
@@ -351,5 +337,5 @@ return [
 	'qa_team-management' => 'Teams',
 	'qa_team-management-singular' => 'Team',
 	'quickadmin_title' => 'Covid - 19',
- 
+
 ];
