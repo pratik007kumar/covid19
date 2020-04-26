@@ -21,9 +21,7 @@
           <button id="cta-popup" type="submit">Resources</button>
         </a>
         <br />
-        <a href="https://empeal-health.typeform.com/to/FuuOav">
-          <button id="cta-popup" type="submit">Virtual Catch-up</button>
-        </a>
+
         <br />
         <h2>Live Events</h2>
         <br />

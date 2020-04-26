@@ -10,6 +10,11 @@ return [
 	'quiz' => [
 		'title' => 'Assessment',
 		'fields' => [],
+    ],
+
+	'call' => [
+		'title' => 'Quick Call',
+		'fields' => [],
 	],
 
 	'permissions' => [
