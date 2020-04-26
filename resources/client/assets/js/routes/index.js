@@ -34,6 +34,7 @@ import QuizHome from "../components/cruds/Quiz/Home.vue";
 import QuizCovidSelfAssessment from "../components/cruds/Quiz/QuizTypes/CovidSelfAssessment.vue";
 import QuizCovidVisitorChecklist from "../components/cruds/Quiz/QuizTypes/CovidVisitorChecklist.vue";
 import Calendar from "../components/cruds/Calendar/Calendar.vue";
+import Dashboard from "../components/cruds/Dashboard/Home.vue";
 
 Vue.use(VueRouter);
 
@@ -138,6 +139,11 @@ const routes = [
         path: "/quick-consultation",
         component: Calendar,
         name: "calendar.home",
+    },
+    {
+        path: "/dashboard",
+        component: Dashboard,
+        name: "dashboard.home",
     },
 ];
 
