@@ -24,6 +24,9 @@
 
     <link rel="stylesheet" href="{{ url('adminlte/bootstrap/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ url('adminlte/css/AdminLTE.min.css') }}">
+    {{-- <link rel="stylesheet" href="{{ url('css/style.css') }}"> --}}
+
+     @yield('style')
 </head>
 
 <body class="page-header-fixed">

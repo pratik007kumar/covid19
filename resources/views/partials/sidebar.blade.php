@@ -21,12 +21,12 @@
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li v-if="$can('permission_access')">
+                    {{-- <li v-if="$can('permission_access')">
                         <router-link :to="{ name: 'permissions.index' }">
                             <i class="fa fa-briefcase"></i>
                             <span>@lang('quickadmin.permissions.title')</span>
                         </router-link>
-                    </li>
+                    </li> --}}
                     <li v-if="$can('role_access')">
                         <router-link :to="{ name: 'roles.index' }">
                             <i class="fa fa-briefcase"></i>
@@ -41,7 +41,7 @@
                     </li>
                 </ul>
             </li>
-            <li class="treeview" v-if="$can('contact_management_access')">
+            {{-- <li class="treeview" v-if="$can('contact_management_access')">
                 <a href="#">
                     <i class="fa fa-phone-square"></i>
                     <span>@lang('quickadmin.contact-management.title')</span>
@@ -63,7 +63,7 @@
                         </router-link>
                     </li>
                 </ul>
-            </li>
+            </li> --}}
             <li v-if="$can('patient_access')">
                 <router-link :to="{ name: 'patients.index' }">
                     <i class="fa fa-address-book"></i>

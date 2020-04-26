@@ -1,11 +1,60 @@
 @extends('layouts.auth')
 
+@section('style')
+<style>
+	.loginContianer{
+		background: url(../images/loginBg.png) no-repeat top left;
+		background-size: cover;
+		position: relative;
+		padding: 10px 0 90px 0;
+		height: 100%;
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+    }
+    .loginlogoContainer{
+		margin: 0 0 50px 0;
+	    background: #fff;
+	    padding: 10px;
+    	border-radius: 10px 0px 10px 0px;
+	}
+    .loginlogoContainer img{
+        width: 100%;
+        height: 100%;
+    }
+    .loginForm{
+		background: url(../images/loginFormBg.png) no-repeat top left;
+		background-size: cover;
+        padding: 20px 130px 30px 30px;
+        /* height: 300px; */
+        /* border-bottom-right-radius: 125px  ; */
+        border-bottom-left-radius: 20px;
+        color: #fff;
+	}
+	 
+    </style>
+@endsection
 @section('content')
+   <div  class="loginContianer">
+        <div  class="container">
+            <div  class="row">
+                <div  class="col-lg-3 col-md-6 col-sm-12 col-12">
+                    <div  class="loginlogoContainer">
+                        <a  href="#">
+                            <img  alt="logo" src="images/login-logo.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
+        <div class="col-md-8 col-md-offset-2 ">
+            {{-- <div class="panel panel-default">
                 <div class="panel-heading">{{ ucfirst(config('app.name')) }} @lang('quickadmin.qa_login')</div>
-                <div class="panel-body">
+                <div class="panel-body"> --}}
+                    <div class="loginForm">
+                        <div class="form-group" ><h1 class="text-center"> Login </h1></div>
+                    
                     
                     @if (count($errors) > 0)
                         <div class="alert alert-danger">
@@ -74,8 +123,51 @@
                             </div>
                         </div>
                     </form>
+                    </div>
+                {{-- </div>
+            </div> --}}
+        </div>
+    </div> 
+    </div> 
+
+
+
+    {{-- <div  class="loginContianer">
+        <div  class="container">
+            <div  class="row">
+                <div  class="col-lg-3 col-md-6 col-sm-12 col-12">
+                    <div  class="loginlogoContainer">
+                        <a  href="#">
+                            <img  alt="logo" src="images/login-logo.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div  class="row">
+                <div  class="col-lg-6 offset-lg-3 col-md-6 offset-md-6 col-sm-12 col-12">
+                    <div  class="loginForm">
+                        <h4 >Login</h4>
+                        <form  novalidate="" class="ng-untouched ng-pristine ng-invalid">
+                            <div  class="input-field">
+                                <input  autocomplete="off" class="validate ng-untouched ng-pristine ng-invalid" formcontrolname="email" id="email" type="email"><label  for="email">Email Address</label><!----><!----><!----></div><div  class="input-field">
+                                <input  autocomplete="new-password" class="validate ng-untouched ng-pristine ng-invalid" formcontrolname="password" id="pass" type="password"><label  for="pass">Password</label><!----><!----></div>
+                                <div  class="checkboxOuter">
+                                    <label >
+                                        <input  class="filled-in ng-untouched ng-pristine ng-valid" formcontrolname="remember" name="remember" type="checkbox">
+                                        <span >Remember Me</span>
+                                    </label>
+                                </div>
+                                <div  class="submitOuter">
+                                    <button  type="submit">Login</button>
+                                </div>
+                                <div  class="otherSection">
+                                    <a  href="/forgot-password" routerlink="/forgot-password">Forgot Password ?</a>
+                                </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        
+    </div> --}}
 @endsection
