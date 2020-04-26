@@ -13,7 +13,7 @@ return [
     ],
 
 	'call' => [
-		'title' => 'Quick Call',
+		'title' => 'Quick Consultation',
 		'fields' => [],
 	],
 

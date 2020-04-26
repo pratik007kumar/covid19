@@ -21,7 +21,6 @@
           <button id="cta-popup" type="submit">Resources</button>
         </a>
         <br />
-
         <br />
         <h2>Live Events</h2>
         <br />

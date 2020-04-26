@@ -85,7 +85,7 @@
             </li>
 
             <li>
-                <router-link :to="{ name: 'quiz.home' }">
+                <router-link :to="{ name: 'calendar.home' }">
                     <i class="fa fa-key"></i>
                     <span class="title">@lang('quickadmin.call.title')</span>
                 </router-link>

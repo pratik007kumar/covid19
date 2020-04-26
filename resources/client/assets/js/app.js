@@ -72,6 +72,9 @@ import 'eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css
 import ability from './config/ability'
 import { abilitiesPlugin } from '@casl/vue'
 import VueCkeditor from 'vue-ckeditor2'
+import HighchartsVue from "highcharts-vue";
+import TrendChart from "vue-trend-chart";
+
 
 Vue.use(Datatable)
 Vue.use(VueAWN, { position: 'top-right' })
@@ -79,6 +82,8 @@ Vue.use(datePicker)
 Vue.use(VueSweetalert2)
 Vue.use(abilitiesPlugin, ability)
 Vue.use(VueCkeditor)
+Vue.use(HighchartsVue);
+Vue.use(TrendChart);
 
 Vue.component('back-buttton', require('./components/BackButton.vue'))
 Vue.component('bootstrap-alert', require('./components/Alert.vue'))

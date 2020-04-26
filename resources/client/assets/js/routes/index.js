@@ -33,6 +33,7 @@ import DoctorsEdit from "../components/cruds/Doctors/Edit.vue";
 import QuizHome from "../components/cruds/Quiz/Home.vue";
 import QuizCovidSelfAssessment from "../components/cruds/Quiz/QuizTypes/CovidSelfAssessment.vue";
 import QuizCovidVisitorChecklist from "../components/cruds/Quiz/QuizTypes/CovidVisitorChecklist.vue";
+import Calendar from "../components/cruds/Calendar/Calendar.vue";
 
 Vue.use(VueRouter);
 
@@ -132,6 +133,11 @@ const routes = [
         path: "/quiz/covid-visitor-checklist",
         component: QuizCovidVisitorChecklist,
         name: "quiz.covidvisitorchecklist",
+    },
+    {
+        path: "/quick-consultation",
+        component: Calendar,
+        name: "calendar.home",
     },
 ];
 
