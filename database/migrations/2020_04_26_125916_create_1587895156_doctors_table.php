@@ -18,7 +18,7 @@ class Create1587895156DoctorsTable extends Migration
                 $table->string('first_name')->nullable();
                 $table->string('last_name')->nullable();
                 $table->string('email')->nullable();
-                $table->string('phone')->nullable();
+                $table->string('mobile')->nullable();
                 $table->string('address')->nullable();
                 $table->string('state')->nullable();
                 $table->string('pin')->nullable();

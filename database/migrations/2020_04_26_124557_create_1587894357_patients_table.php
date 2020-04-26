@@ -12,14 +12,18 @@ class Create1587894357PatientsTable extends Migration
      */
     public function up()
     {
-        if(! Schema::hasTable('patients')) {
+        if (!Schema::hasTable('patients')) {
             Schema::create('patients', function (Blueprint $table) {
                 $table->increments('id');
-                $table->string('name')->nullable();
+                $table->string('first_name')->nullable();
+                $table->string('last_name')->nullable();
+
                 $table->string('email')->nullable();
                 $table->string('mobile')->nullable();
+                $table->string('address')->nullable();
+                $table->string('state')->nullable();
                 $table->string('pin')->nullable();
-                
+
                 $table->timestamps();
                 $table->softDeletes();
 

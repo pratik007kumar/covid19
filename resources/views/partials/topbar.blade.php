@@ -5,7 +5,14 @@
         <!-- mini logo for sidebar mini 50x50 pixels -->
         <!-- logo for regular state and mobile devices -->
         <span class="logo-lg">
-           <img src="../images/empealLogo.png" alt="" srcset=""></span>
+           {{-- <img src="../images/empealLogo.png" alt="" srcset=""> --}}
+               <img src="{{asset('images/new-logo.png')}}"/>
+               </span>
+                <span class="logo-sx">
+           
+               <img src="{{asset('images/logocirclemdpi.png')}}" style="width:40px"/>
+               </span>
+
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">

@@ -3,6 +3,7 @@
         <div class="navbar-header">
             <a href="{{ url('/') }}"
                class="navbar-brand">
+               <img src="{{asset('images/new-logo.png')}}"/>
                 @lang('quickadmin.quickadmin_title')
             </a>
         </div>

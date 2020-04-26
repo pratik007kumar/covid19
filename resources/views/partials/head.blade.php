@@ -31,5 +31,6 @@
 <link rel="stylesheet" href="{{ url('adminlte/bootstrap/css/bootstrap.min.css') }}">
 <link rel="stylesheet" href="{{ url('adminlte/css/AdminLTE.min.css') }}">
 <link rel="stylesheet" href="{{ url('adminlte/css/custom.css') }}">
-<link rel="stylesheet" href="{{ url('adminlte/css/skins/skin-blue.min.css') }}">
+{{-- <link rel="stylesheet" href="{{ url('adminlte/css/skins/skin-blue.min.css') }}"> --}}
+<link rel="stylesheet" href="{{ url('adminlte/css/skins/skin-white.css') }}">
 <link rel="stylesheet" href="{{ mix('/client/css/app.css') }}">
