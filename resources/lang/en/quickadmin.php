@@ -15,6 +15,11 @@ return [
 	'call' => [
 		'title' => 'Quick Consultation',
 		'fields' => [],
+    ],
+
+	'prescription' => [
+		'title' => 'Prescriptions',
+		'fields' => [],
 	],
 
 	'permissions' => [

@@ -3,7 +3,7 @@
     <div class="row1">
       <div class="col1">
         <div id="div1">
-          <h3>Activity</h3>
+          <h3>Body Temperature</h3>
         </div>
         <div id="div2">
           <vue-chart type="bar" :data="chartData2" width="400" height="200"></vue-chart>
@@ -21,10 +21,10 @@
     <div class="row2">
       <div class="col1">
         <div id="div1">
-          <h3>Calories</h3>
+          <h3>Activity</h3>
         </div>
         <div id="div2">
-          <vue-chart type="line" :data="chartData2" width="400" height="200"></vue-chart>
+          <vue-chart type="line" :data="chartData4" width="400" height="200"></vue-chart>
         </div>
       </div>
       <div class="col2">
@@ -51,11 +51,11 @@
 export default {
   data: () => ({
     chartData1: {
-      labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+      labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
       datasets: [
         {
-          label: "Calories",
-          data: [5000, 3000, 1900, 1200, 2000, 3000],
+          label: "bpm",
+          data: [85, 78, 90, 120, 110, 102],
           backgroundColor: [
             "rgba(255, 99, 132, 0.2)",
             "rgba(54, 162, 235, 0.2)",
@@ -77,11 +77,11 @@ export default {
       ]
     },
     chartData2: {
-      labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+      labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
       datasets: [
         {
-          label: "Activity",
-          data: [1200, 1900, 3000, 5000, 2000, 3000],
+          label: "°F",
+          data: [100, 98.3, 103, 102, 101, 99],
           backgroundColor: [
             "rgba(54, 162, 235, 0.2)",
             "rgba(255, 99, 132, 0.2)",
@@ -103,26 +103,44 @@ export default {
       ]
     },
     chartData3: {
-      labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+      labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
       datasets: [
         {
-          label: "Activity",
-          data: [1200, 1900, 3000, 5000, 2000, 3000],
+          label: "Max",
+          backgroundColor: "rgba(75, 192, 192, 0.2)",
+          borderColor: "#3abd5d",
+          data: [85, 102, 96, 185, 70, 72, 100]
+        },
+        {
+          label: "Min",
+          backgroundColor: "rgba(255, 99, 132, 0.21)",
+          borderColor: "rgba(255, 99, 132, 1)",
+          data: [28, 48, 40, 19, 56, 27, 45]
+        }
+      ],
+      borderWidth: 3
+    },
+    chartData4: {
+      labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+      datasets: [
+        {
+          label: "Steps",
+          data: [8000, 3000, 8000, 7500, 10100, 9609],
           backgroundColor: [
-            "rgba(255, 159, 64, 0.2)",
-            "rgba(255, 206, 86, 0.2)",
             "rgba(54, 162, 235, 0.2)",
             "rgba(255, 99, 132, 0.2)",
+            "rgba(255, 206, 86, 0.2)",
             "rgba(75, 192, 192, 0.2)",
-            "rgba(153, 102, 255, 0.2)"
+            "rgba(153, 102, 255, 0.2)",
+            "rgba(255, 159, 64, 0.2)"
           ],
           borderColor: [
-            "rgba(255, 159, 64, 1)",
-            "rgba(153, 102, 255, 1)",
             "rgba(54, 162, 235, 1)",
             "rgba(255, 206, 86, 1)",
             "rgba(255, 99, 132, 1)",
-            "rgba(75, 192, 192, 1)"
+            "rgba(153, 102, 255, 1)",
+            "rgba(75, 192, 192, 1)",
+            "rgba(255, 159, 64, 1)"
           ],
           borderWidth: 3
         }

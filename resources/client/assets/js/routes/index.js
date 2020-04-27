@@ -35,6 +35,7 @@ import QuizCovidSelfAssessment from "../components/cruds/Quiz/QuizTypes/CovidSel
 import QuizCovidVisitorChecklist from "../components/cruds/Quiz/QuizTypes/CovidVisitorChecklist.vue";
 import Calendar from "../components/cruds/Calendar/Calendar.vue";
 import Dashboard from "../components/cruds/Dashboard/Home.vue";
+import Prescription from "../components/cruds/Prescription/Prescription.vue";
 
 Vue.use(VueRouter);
 
@@ -144,6 +145,11 @@ const routes = [
         path: "/dashboard",
         component: Dashboard,
         name: "dashboard.home",
+    },
+    {
+        path: "/prescription",
+        component: Prescription,
+        name: "prescription.home",
     },
 ];
 

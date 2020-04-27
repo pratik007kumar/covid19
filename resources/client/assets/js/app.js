@@ -80,8 +80,10 @@ import TrendChart from "vue-trend-chart";
 import Bars from "vuebars";
 import VueChart from "vue-chart-js";
 import VueGoogleHeatmap from "vue-google-heatmap";
+import DataTable from "laravel-vue-datatable";
 
 Vue.use(Datatable);
+Vue.use(DataTable);
 Vue.use(VueAWN, { position: "top-right" });
 Vue.use(datePicker);
 Vue.use(VueSweetalert2);

@@ -72,9 +72,9 @@
             </li>
 
             <li v-if="$can('patient_access')">
-                <router-link :to="{ name: 'patients.index' }">
-                    <i class="fa fa-address-book"></i>
-                    <span>@lang('quickadmin.patient.title')</span>
+                <router-link :to="{ name: 'prescription.home' }">
+                    <i class="fa fa-file"></i>
+                    <span>@lang('quickadmin.prescription.title')</span>
                     <span style="margin-left: 10px; font-family: Helvetica"><i class="fa fa-plus-square"></i></span>
                 </router-link>
             </li>
@@ -88,14 +88,14 @@
 
             <li>
                 <router-link :to="{ name: 'quiz.home' }">
-                    <i class="fa fa-key"></i>
+                    <i class="fa fa-rocket"></i>
                     <span class="title">@lang('quickadmin.quiz.title')</span>
                 </router-link>
             </li>
 
             <li>
                 <router-link :to="{ name: 'calendar.home' }">
-                    <i class="fa fa-key"></i>
+                    <i class="fa fa-calendar"></i>
                     <span class="title">@lang('quickadmin.call.title')</span>
                 </router-link>
             </li>

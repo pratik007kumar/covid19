@@ -18,6 +18,7 @@
       type="button"
       class="btn btn-danger"
     >Delete</button>
+    <a href="images/prescription.jpg" type="button" target="_blank" class="btn btn-danger">open</a>
   </div>
 </template>
 
