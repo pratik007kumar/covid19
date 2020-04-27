@@ -12,6 +12,14 @@
                 </router-link>
             </li>
 
+
+            <li>
+                <router-link :to="{ name: 'quiz.home' }">
+                    <i class="fa fa-rocket"></i>
+                    <span class="title">@lang('quickadmin.quiz.title')</span>
+                </router-link>
+            </li>
+
             <li class="treeview" v-if="$can('user_management_access')">
                 <a href="#">
                     <i class="fa fa-users"></i>
@@ -86,12 +94,6 @@
                 </router-link>
             </li>
 
-            <li>
-                <router-link :to="{ name: 'quiz.home' }">
-                    <i class="fa fa-rocket"></i>
-                    <span class="title">@lang('quickadmin.quiz.title')</span>
-                </router-link>
-            </li>
 
             <li>
                 <router-link :to="{ name: 'calendar.home' }">

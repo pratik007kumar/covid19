@@ -10,21 +10,28 @@ function initialState() {
 const getters = {
     data: (state) => {
         let rows = state.all;
+        console.log(rows);
 
-        if (state.query.sort) {
-            rows = _.orderBy(state.all, state.query.sort, state.query.order);
+        //     if (state.query.sort) {
+        // rows = _.orderBy(state.all, state.query.sort, state.query.order);
+        //     }
+
+        data1 = {};
+        for (i = 0; i < rows.length; i++) {
+            data1.push({ id: rows[i].id, end: rows[i].end });
         }
 
-        return rows.slice(
-            state.query.offset,
-            state.query.offset + state.query.limit
-        );
+        return data1;
+        // return rows.slice(
+        //     state.query.offset,
+        //     state.query.offset + state.query.limit
+        // );
+        // },
+        // total: (state) => state.all.length,
+        // loading: (state) => state.loading,
+        // relationships: (state) => state.relationships,
     },
-    total: (state) => state.all.length,
-    loading: (state) => state.loading,
-    relationships: (state) => state.relationships,
 };
-
 const actions = {
     fetchData({ commit, state }) {
         commit("setLoading", true);
@@ -80,6 +87,7 @@ const mutations = {
     },
     resetState(state) {
         state = Object.assign(state, initialState());
+        console.log(state);
     },
 };
 

@@ -14,10 +14,10 @@
         <router-link to="/quiz/covid-self-assessment">
           <button id="cta-popup" type="submit">Self-Assessment</button>
         </router-link>
-        <router-link to="/quiz/covid-visitor-checklist">
+        <!-- <router-link to="/quiz/covid-visitor-checklist">
           <button id="cta-popup" type="submit">Visitor Checklist</button>
-        </router-link>
-        <a href="https://empeal.com/covidresources">
+        </router-link> -->
+        <a href="https://empeal.com/covidresources" target="_blank">
           <button id="cta-popup" type="submit">Resources</button>
         </a>
         <br />

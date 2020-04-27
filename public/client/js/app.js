@@ -14910,6 +14910,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__fullcalendar_daygrid__ = __webpack_require__("./node_modules/@fullcalendar/daygrid/main.esm.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__fullcalendar_timegrid__ = __webpack_require__("./node_modules/@fullcalendar/timegrid/main.esm.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__fullcalendar_interaction__ = __webpack_require__("./node_modules/@fullcalendar/interaction/main.esm.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__store_modules_Appointments_index__ = __webpack_require__("./resources/client/assets/js/store/modules/Appointments/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vuex__ = __webpack_require__("./node_modules/vuex/dist/vuex.esm.js");
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 //
 //
 //
@@ -14928,7 +14932,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
+
+
+
 
 
 
@@ -14939,24 +14945,102 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     FullCalendar: __WEBPACK_IMPORTED_MODULE_0__fullcalendar_vue__["a" /* default */] // make the <FullCalendar> tag available
   },
   data: function data() {
+    // console.log(data);
     return {
       calendarPlugins: [
       // plugins must be defined in the JS
       __WEBPACK_IMPORTED_MODULE_1__fullcalendar_daygrid__["d" /* default */], __WEBPACK_IMPORTED_MODULE_2__fullcalendar_timegrid__["a" /* default */], __WEBPACK_IMPORTED_MODULE_3__fullcalendar_interaction__["a" /* default */] // needed for dateClick
       ],
       calendarWeekends: true,
-      calendarEvents: [
-      // initial event data
-      {
-        title: "Arnab Tarwani - Appointment with Dr. Mason",
-        date: new Date()
+      calendarEvents: [{
+        title: "Appointment at 10:10 pm https://www.gotomeet.me/empeal Access Code: 324-135-941",
+        start: "2020-04-12 12:10:00",
+        end: "2020-04-12 1:10:00",
+        id: 1
       }, {
-        title: "Usman Farooq - Appointment with Dr. Ray",
-        date: "2020-04-03"
-      }, { title: "Max Rake - Appointment with Dr. Ray", date: "2020-04-03" }, { title: "Tyler Newman - Appointment with Dr. Ray", date: "2020-04-23" }]
+        title: "Appointment at 11:10 pm https://www.gotomeet.me/empeal Access Code: 324-135-941",
+        start: "2020-04-13 11:10:00",
+        end: "2020-04-13 12:10:00",
+        id: 2
+      }, {
+        title: "Appointment at 9:10 pm https://www.gotomeet.me/empeal Access Code: 324-135-941",
+        start: "2020-04-14 09:10:00",
+        end: "2020-04-14 10:10:00",
+        id: 3
+      }, {
+        title: "Appointment at 3:10 pm https://www.gotomeet.me/empeal Access Code: 324-135-941",
+        start: "2020-04-21 03:10:00",
+        end: "2020-04-21 04:10:00",
+        id: 4
+      }, {
+        title: "Appointment at 2:10 pm https://www.gotomeet.me/empeal Access Code: 324-135-941",
+        start: "2020-04-25 02:10:00",
+        end: "2020-04-25 04:10:00",
+        id: 5
+      }, {
+        title: "Appointment at 10:10 pm https://www.gotomeet.me/empeal Access Code: 324-135-941",
+        start: "2020-04-15 10:10:00",
+        end: "2020-04-15 11:10:00",
+        id: 6
+      }, {
+        title: "Appointment at 11:10 pm https://www.gotomeet.me/empeal Access Code: 324-135-941",
+        start: "2020-04-19 11:10:00",
+        end: "2020-04-19 12:10:00",
+        id: 7
+      }, {
+        title: "Appointment at 9:10 pm https://www.gotomeet.me/empeal Access Code: 324-135-941",
+        start: "2020-04-01 09:10:00",
+        end: "2020-04-01 10:10:00",
+        id: 8
+      }, {
+        title: "Appointment at 3:10 pm https://www.gotomeet.me/empeal Access Code: 324-135-941",
+        start: "2020-04-02 03:10:00",
+        end: "2020-04-02 04:10:00",
+        id: 9
+      }, {
+        title: "Appointment at 2:10 pm https://www.gotomeet.me/empeal Access Code: 324-135-941",
+        start: "2020-04-03 02:10:00",
+        end: "2020-04-03 04:10:00",
+        id: 10
+      }, {
+        title: "Appointment at 10:10 pm https://www.gotomeet.me/empeal Access Code: 324-135-941",
+        start: "2020-04-04 10:10:00",
+        end: "2020-04-04 11:10:00",
+        id: 11
+      }, {
+        title: "Appointment at 11:10 pm https://www.gotomeet.me/empeal Access Code: 324-135-941",
+        start: "2020-04-15 11:10:00",
+        end: "2020-04-15 12:10:00",
+        id: 12
+      }, {
+        title: "Appointment at 9:10 pm https://www.gotomeet.me/empeal Access Code: 324-135-941",
+        start: "2020-04-18 09:10:00",
+        end: "2020-04-18 10:10:00",
+        id: 13
+      }, {
+        title: "Appointment at 3:10 pm https://www.gotomeet.me/empeal Access Code: 324-135-941",
+        start: "2020-04-21 03:10:00",
+        end: "2020-04-21 04:10:00",
+        id: 14
+      }, {
+        title: "Appointment at 2:10 pm https://www.gotomeet.me/empeal Access Code: 324-135-941",
+        start: "2020-04-25 02:10:00",
+        end: "2020-04-25 04:10:00",
+        id: 15
+      }]
     };
-  }
-  //   methods: {
+  },
+  created: function created() {
+    this.fetchData();
+    console.log(this.dataObject);
+  },
+  destroyed: function destroyed() {
+    this.resetState();
+  },
+
+  computed: _extends({}, Object(__WEBPACK_IMPORTED_MODULE_5_vuex__["mapGetters"])("AppointmentsIndex", ["dataObject"])),
+  methods: _extends({}, Object(__WEBPACK_IMPORTED_MODULE_5_vuex__["mapActions"])("AppointmentsIndex", ["fetchData", "setQuery", "resetState"]))
+
   //     toggleWeekends() {
   //       this.calendarWeekends = !this.calendarWeekends; // update a property
   //     },
@@ -16747,36 +16831,43 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    data: function data() {
-        return {
-            columns: [{ title: '#', field: 'id', sortable: true, colStyle: 'width: 50px;' }, { title: 'First name', field: 'first_name', sortable: true }, { title: 'Last name', field: 'last_name', sortable: true }, { title: 'Email', field: 'email', sortable: true }, { title: 'Phone', field: 'phone', sortable: true }, { title: 'Address', field: 'address', sortable: true }, { title: 'State', field: 'state', sortable: true }, { title: 'Pin', field: 'pin', sortable: true }, { title: 'Actions', tdComp: __WEBPACK_IMPORTED_MODULE_1__dtmodules_DatatableActions___default.a, visible: true, thClass: 'text-right', tdClass: 'text-right', colStyle: 'width: 130px;' }],
-            query: { sort: 'id', order: 'desc' },
-            xprops: {
-                module: 'DoctorsIndex',
-                route: 'doctors',
-                permission_prefix: 'doctor_'
-            }
-        };
-    },
-    created: function created() {
-        this.$root.relationships = this.relationships;
-        this.fetchData();
-    },
-    destroyed: function destroyed() {
-        this.resetState();
-    },
+  data: function data() {
+    return {
+      columns: [{ title: "#", field: "id", sortable: true, colStyle: "width: 50px;" }, { title: "First name", field: "first_name", sortable: true }, { title: "Last name", field: "last_name", sortable: true }, { title: "Email", field: "email", sortable: true }, { title: "Phone", field: "phone", sortable: true }, { title: "Address", field: "address", sortable: true }, { title: "State", field: "state", sortable: true }, { title: "Pin", field: "pin", sortable: true }, {
+        title: "Actions",
+        tdComp: __WEBPACK_IMPORTED_MODULE_1__dtmodules_DatatableActions___default.a,
+        visible: true,
+        thClass: "text-right",
+        tdClass: "text-right",
+        colStyle: "width: 130px;"
+      }],
+      query: { sort: "id", order: "desc" },
+      xprops: {
+        module: "DoctorsIndex",
+        route: "doctors",
+        permission_prefix: "doctor_"
+      }
+    };
+  },
+  created: function created() {
+    this.$root.relationships = this.relationships;
+    this.fetchData();
+  },
+  destroyed: function destroyed() {
+    this.resetState();
+  },
 
-    computed: _extends({}, Object(__WEBPACK_IMPORTED_MODULE_0_vuex__["mapGetters"])('DoctorsIndex', ['data', 'total', 'loading', 'relationships'])),
-    watch: {
-        query: {
-            handler: function handler(query) {
-                this.setQuery(query);
-            },
+  computed: _extends({}, Object(__WEBPACK_IMPORTED_MODULE_0_vuex__["mapGetters"])("DoctorsIndex", ["data", "total", "loading", "relationships"])),
+  watch: {
+    query: {
+      handler: function handler(query) {
+        this.setQuery(query);
+      },
 
-            deep: true
-        }
-    },
-    methods: _extends({}, Object(__WEBPACK_IMPORTED_MODULE_0_vuex__["mapActions"])('DoctorsIndex', ['fetchData', 'setQuery', 'resetState']))
+      deep: true
+    }
+  },
+  methods: _extends({}, Object(__WEBPACK_IMPORTED_MODULE_0_vuex__["mapActions"])("DoctorsIndex", ["fetchData", "setQuery", "resetState"]))
 });
 
 /***/ }),
@@ -19218,6 +19309,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
 //
 //
 //
@@ -35776,7 +35872,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -35836,7 +35932,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -67453,7 +67549,8 @@ var render = function() {
         {
           staticClass: "btn btn-danger",
           attrs: {
-            href: "images/prescription.jpg",
+            href:
+              "https://www.researchgate.net/publication/331927985_IDEAL_DRUG_PRESCRIPTION_WRITING",
             type: "button",
             target: "_blank"
           }
@@ -67967,7 +68064,7 @@ var render = function() {
                           },
                           [
                             _c("i", { staticClass: "fa fa-plus" }),
-                            _vm._v(" Add new\n                            ")
+                            _vm._v(" Add new\n              ")
                           ]
                         )
                       : _vm._e(),
@@ -67984,7 +68081,7 @@ var render = function() {
                           staticClass: "fa fa-refresh",
                           class: { "fa-spin": _vm.loading }
                         }),
-                        _vm._v(" Refresh\n                            ")
+                        _vm._v(" Refresh\n              ")
                       ]
                     )
                   ],
@@ -68045,7 +68142,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "col-xs-4 col-xs-offset-4" }, [
       _c("div", { staticClass: "alert text-center" }, [
         _c("i", { staticClass: "fa fa-spin fa-refresh" }),
-        _vm._v(" Loading\n                                ")
+        _vm._v(" Loading\n                ")
       ])
     ])
   }
@@ -68288,11 +68385,17 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("a", { attrs: { href: "https://empeal.com/covidresources" } }, [
-      _c("button", { attrs: { id: "cta-popup", type: "submit" } }, [
-        _vm._v("Resources")
-      ])
-    ])
+    return _c(
+      "a",
+      {
+        attrs: { href: "https://empeal.com/covidresources", target: "_blank" }
+      },
+      [
+        _c("button", { attrs: { id: "cta-popup", type: "submit" } }, [
+          _vm._v("Resources")
+        ])
+      ]
+    )
   },
   function() {
     var _vm = this
@@ -68330,16 +68433,6 @@ var staticRenderFns = [
               [
                 _c("button", { attrs: { id: "cta-popup", type: "submit" } }, [
                   _vm._v("Self-Assessment")
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "router-link",
-              { attrs: { to: "/quiz/covid-visitor-checklist" } },
-              [
-                _c("button", { attrs: { id: "cta-popup", type: "submit" } }, [
-                  _vm._v("Visitor Checklist")
                 ])
               ]
             ),
@@ -69851,8 +69944,7 @@ var render = function() {
           plugins: _vm.calendarPlugins,
           weekends: _vm.calendarWeekends,
           events: _vm.calendarEvents
-        },
-        on: { dateClick: _vm.handleDateClick }
+        }
       })
     ],
     1
@@ -76538,6 +76630,10 @@ var routes = [{
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__modules_Patients_single__ = __webpack_require__("./resources/client/assets/js/store/modules/Patients/single.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__modules_Doctors__ = __webpack_require__("./resources/client/assets/js/store/modules/Doctors/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__modules_Doctors_single__ = __webpack_require__("./resources/client/assets/js/store/modules/Doctors/single.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__modules_Appointments__ = __webpack_require__("./resources/client/assets/js/store/modules/Appointments/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__modules_Appointments_single__ = __webpack_require__("./resources/client/assets/js/store/modules/Appointments/single.js");
+
+
 
 
 
@@ -76560,7 +76656,7 @@ var routes = [{
 
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuex__["default"]);
 
-var debug = "development" !== 'production';
+var debug = "development" !== "production";
 
 /* harmony default export */ __webpack_exports__["a"] = (new __WEBPACK_IMPORTED_MODULE_1_vuex__["default"].Store({
     modules: {
@@ -76580,10 +76676,326 @@ var debug = "development" !== 'production';
         PatientsIndex: __WEBPACK_IMPORTED_MODULE_15__modules_Patients__["a" /* default */],
         PatientsSingle: __WEBPACK_IMPORTED_MODULE_16__modules_Patients_single__["a" /* default */],
         DoctorsIndex: __WEBPACK_IMPORTED_MODULE_17__modules_Doctors__["a" /* default */],
-        DoctorsSingle: __WEBPACK_IMPORTED_MODULE_18__modules_Doctors_single__["a" /* default */]
+        DoctorsSingle: __WEBPACK_IMPORTED_MODULE_18__modules_Doctors_single__["a" /* default */],
+        AppointmentsIndex: __WEBPACK_IMPORTED_MODULE_19__modules_Appointments__["a" /* default */],
+        AppointmentsSingle: __WEBPACK_IMPORTED_MODULE_20__modules_Appointments_single__["a" /* default */]
     },
     strict: debug
 }));
+
+/***/ }),
+
+/***/ "./resources/client/assets/js/store/modules/Appointments/index.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+function initialState() {
+    return {
+        all: [],
+        relationships: {},
+        query: {},
+        loading: false
+    };
+}
+
+var getters = {
+    data: function data(state) {
+        var rows = state.all;
+        console.log(rows);
+
+        //     if (state.query.sort) {
+        // rows = _.orderBy(state.all, state.query.sort, state.query.order);
+        //     }
+
+        data1 = {};
+        for (i = 0; i < rows.length; i++) {
+            data1.push({ id: rows[i].id, end: rows[i].end });
+        }
+
+        return data1;
+        // return rows.slice(
+        //     state.query.offset,
+        //     state.query.offset + state.query.limit
+        // );
+        // },
+        // total: (state) => state.all.length,
+        // loading: (state) => state.loading,
+        // relationships: (state) => state.relationships,
+    }
+};
+var actions = {
+    fetchData: function fetchData(_ref) {
+        var commit = _ref.commit,
+            state = _ref.state;
+
+        commit("setLoading", true);
+
+        axios.get("/api/v1/appointments").then(function (response) {
+            commit("setAll", response.data.data);
+        }).catch(function (error) {
+            message = error.response.data.message || error.message;
+            commit("setError", message);
+            console.log(message);
+        }).finally(function () {
+            commit("setLoading", false);
+        });
+    },
+    destroyData: function destroyData(_ref2, id) {
+        var commit = _ref2.commit,
+            state = _ref2.state;
+
+        axios.delete("/api/v1/appointments/" + id).then(function (response) {
+            commit("setAll", state.all.filter(function (item) {
+                return item.id != id;
+            }));
+        }).catch(function (error) {
+            message = error.response.data.message || error.message;
+            commit("setError", message);
+            console.log(message);
+        });
+    },
+    setQuery: function setQuery(_ref3, value) {
+        var commit = _ref3.commit;
+
+        commit("setQuery", purify(value));
+    },
+    resetState: function resetState(_ref4) {
+        var commit = _ref4.commit;
+
+        commit("resetState");
+    }
+};
+
+var mutations = {
+    setAll: function setAll(state, items) {
+        state.all = items;
+    },
+    setLoading: function setLoading(state, loading) {
+        state.loading = loading;
+    },
+    setQuery: function setQuery(state, query) {
+        state.query = query;
+    },
+    resetState: function resetState(state) {
+        state = Object.assign(state, initialState());
+        console.log(state);
+    }
+};
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    namespaced: true,
+    state: initialState,
+    getters: getters,
+    actions: actions,
+    mutations: mutations
+});
+
+/***/ }),
+
+/***/ "./resources/client/assets/js/store/modules/Appointments/single.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+function initialState() {
+    return {
+        item: {
+            id: null,
+            doctor_user_id: null,
+            patient_user_id: null,
+            title: null,
+            event_start_dt: null,
+            event_end_dt: null
+        },
+
+        loading: false
+    };
+}
+
+var getters = {
+    item: function item(state) {
+        return state.item;
+    },
+    loading: function loading(state) {
+        return state.loading;
+    }
+};
+
+var actions = {
+    storeData: function storeData(_ref) {
+        var commit = _ref.commit,
+            state = _ref.state,
+            dispatch = _ref.dispatch;
+
+        commit("setLoading", true);
+        dispatch("Alert/resetState", null, { root: true });
+
+        return new Promise(function (resolve, reject) {
+            var params = new FormData();
+
+            for (var fieldName in state.item) {
+                var fieldValue = state.item[fieldName];
+                if ((typeof fieldValue === "undefined" ? "undefined" : _typeof(fieldValue)) !== "object") {
+                    params.set(fieldName, fieldValue);
+                } else {
+                    if (fieldValue && _typeof(fieldValue[0]) !== "object") {
+                        params.set(fieldName, fieldValue);
+                    } else {
+                        for (var index in fieldValue) {
+                            params.set(fieldName + "[" + index + "]", fieldValue[index]);
+                        }
+                    }
+                }
+            }
+
+            axios.post("/api/v1/appointments", params).then(function (response) {
+                commit("resetState");
+                resolve();
+            }).catch(function (error) {
+                var message = error.response.data.message || error.message;
+                var errors = error.response.data.errors;
+
+                dispatch("Alert/setAlert", { message: message, errors: errors, color: "danger" }, { root: true });
+
+                reject(error);
+            }).finally(function () {
+                commit("setLoading", false);
+            });
+        });
+    },
+    updateData: function updateData(_ref2) {
+        var commit = _ref2.commit,
+            state = _ref2.state,
+            dispatch = _ref2.dispatch;
+
+        commit("setLoading", true);
+        dispatch("Alert/resetState", null, { root: true });
+
+        return new Promise(function (resolve, reject) {
+            var params = new FormData();
+            params.set("_method", "PUT");
+
+            for (var fieldName in state.item) {
+                var fieldValue = state.item[fieldName];
+                if ((typeof fieldValue === "undefined" ? "undefined" : _typeof(fieldValue)) !== "object") {
+                    params.set(fieldName, fieldValue);
+                } else {
+                    if (fieldValue && _typeof(fieldValue[0]) !== "object") {
+                        params.set(fieldName, fieldValue);
+                    } else {
+                        for (var index in fieldValue) {
+                            params.set(fieldName + "[" + index + "]", fieldValue[index]);
+                        }
+                    }
+                }
+            }
+
+            axios.post("/api/v1/doctors/" + state.item.id, params).then(function (response) {
+                commit("setItem", response.data.data);
+                resolve();
+            }).catch(function (error) {
+                var message = error.response.data.message || error.message;
+                var errors = error.response.data.errors;
+
+                dispatch("Alert/setAlert", { message: message, errors: errors, color: "danger" }, { root: true });
+
+                reject(error);
+            }).finally(function () {
+                commit("setLoading", false);
+            });
+        });
+    },
+    fetchData: function fetchData(_ref3, id) {
+        var commit = _ref3.commit,
+            dispatch = _ref3.dispatch;
+
+        axios.get("/api/v1/doctors/" + id).then(function (response) {
+            commit("setItem", response.data.data);
+        });
+    },
+    setFirst_name: function setFirst_name(_ref4, value) {
+        var commit = _ref4.commit;
+
+        commit("setFirst_name", value);
+    },
+    setLast_name: function setLast_name(_ref5, value) {
+        var commit = _ref5.commit;
+
+        commit("setLast_name", value);
+    },
+    setEmail: function setEmail(_ref6, value) {
+        var commit = _ref6.commit;
+
+        commit("setEmail", value);
+    },
+    setPhone: function setPhone(_ref7, value) {
+        var commit = _ref7.commit;
+
+        commit("setPhone", value);
+    },
+    setAddress: function setAddress(_ref8, value) {
+        var commit = _ref8.commit;
+
+        commit("setAddress", value);
+    },
+    setState: function setState(_ref9, value) {
+        var commit = _ref9.commit;
+
+        commit("setState", value);
+    },
+    setPin: function setPin(_ref10, value) {
+        var commit = _ref10.commit;
+
+        commit("setPin", value);
+    },
+    resetState: function resetState(_ref11) {
+        var commit = _ref11.commit;
+
+        commit("resetState");
+    }
+};
+
+var mutations = {
+    setItem: function setItem(state, item) {
+        state.item = item;
+    },
+    setFirst_name: function setFirst_name(state, value) {
+        state.item.first_name = value;
+    },
+    setLast_name: function setLast_name(state, value) {
+        state.item.last_name = value;
+    },
+    setEmail: function setEmail(state, value) {
+        state.item.email = value;
+    },
+    setPhone: function setPhone(state, value) {
+        state.item.phone = value;
+    },
+    setAddress: function setAddress(state, value) {
+        state.item.address = value;
+    },
+    setState: function setState(state, value) {
+        state.item.state = value;
+    },
+    setPin: function setPin(state, value) {
+        state.item.pin = value;
+    },
+    setLoading: function setLoading(state, loading) {
+        state.loading = loading;
+    },
+    resetState: function resetState(state) {
+        state = Object.assign(state, initialState());
+    }
+};
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    namespaced: true,
+    state: initialState,
+    getters: getters,
+    actions: actions,
+    mutations: mutations
+});
 
 /***/ }),
 

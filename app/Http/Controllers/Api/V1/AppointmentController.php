@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api\V1;
 
 use Illuminate\Http\Request;
 use App\Http\Resources\Appointment as AppointmentResource;
@@ -16,7 +16,7 @@ class AppointmentController extends Controller
     {
 
 
-        return new AppointmentResource(Appointment::with(['doctor', 'parent'])->get());
+        return new AppointmentResource(Appointment::select('title', 'event_start_dt as start', 'event_end_dt as end', 'id')->get());
     }
 
     public function show($id)
